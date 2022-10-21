@@ -31,6 +31,10 @@ variable "private_subnet" {
     default = [ "private_subnet_1", "private_subnet_2", "private_subnet_3" ]
 }
 
+variable "pub_rt_cidr"{
+    type = string
+    default = "0.0.0.0/0"
+}
 variable "private_subnet_cidr" {
     type = list(string)
     default = [ "10.0.11.0/24", "10.0.12.0/24", "10.0.13.0/24" ]
