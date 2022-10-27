@@ -15,6 +15,12 @@ variable "public_subnet"{
 variable "private_subnet_cidr"{
     type = list(string)
     default = ["10.0.11.0/24", "10.0.12.0/24", "10.0.13.0/24"]
+
+}
+
+variable "cidr_block" {
+    type = number
+    default = "0.0.0.0/0"
 }
 
 variable "private_subnet" {
